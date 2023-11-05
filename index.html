@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="book-list">
+                <h2>Book List</h2>
+
+                <ul>
+                    1. Hacking: The Art of Exploitation <br> by Jon Erickson ISBN: 978-1593271442
+                 </ul>
+                    <ul>
+                   2. Introduction to the Theory of Computation <br> by Michael Sipser ISBN: 978-1133187790
+                 </ul>
+
+                <ul id="book-list-ul">
+                    <!-- Book list items will be added here -->
+                </ul>
+                              
+        </div>
+    </div>
+    <div class="middle-column">
+        <div class="add-book">
+            <h2>Add New Book</h2>
+            <form class="add-book-form">
+                <input type="text" id="title" placeholder="Book Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="text" id="isbn" placeholder="ISBN" required>
+                <input type="submit" value="Add Book">
+                
+            </form>
+           
+        </div>
+    </div>
+    <div class="right-column">
+        <div id="search">
+            <h2>Search Books</h2>
+            <input type="text" id="search-input" placeholder="Search by title, author, or ISBN">
+        <button id="search-button">Search</button>
+        <ul id="search-results">
+            <!-- Search results will be displayed here -->
+        </ul>
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
